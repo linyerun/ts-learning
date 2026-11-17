@@ -1,5 +1,15 @@
 {
   "compilerOptions":{
-    "strict": false
-  }
+    "strict": false,  // 是否开启strict模式
+    "incremental": false,
+    "diagnostics": true,
+    "target": "ES6",  // 目前这个版本用不了ES5了
+    "rootDir": ".",   // 避免去掉src
+    "outDir": "./dist", // 产物的输出地址
+    "module": "commonjs"
+  },
+  // 编译哪个目录的ts文件
+  "include": [
+    "src/**/*"
+  ]
 }
