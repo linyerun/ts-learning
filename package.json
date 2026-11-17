@@ -13,5 +13,9 @@
   "devDependencies": {
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "axios": "^1.21.1",
+    "express": "^5.3.0"
   }
 }
