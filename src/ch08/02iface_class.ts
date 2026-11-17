@@ -2,7 +2,8 @@
 export {}
 
 interface PersonClass1 {
-    get(type: boolean): boolean
+    get(type: boolean): boolean,      // 方法签名
+    // get: (type: boolean)=>boolean, // 函数类型的属性签名
 }
 
 interface PersonClass2 {
