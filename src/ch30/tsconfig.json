@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ESNext",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "strict": true,
+    "allowImportingTsExtensions": true, // 允许源码里写 .ts 后缀
+    "rewriteRelativeImportExtensions": true // 编译时把 .ts 改写成 .js，浏览器才能加载
+  },
+  "include": ["./**/*.ts"]
+}

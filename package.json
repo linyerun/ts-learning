@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:ch30": "tsc -p src/ch30",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
