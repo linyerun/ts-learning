@@ -1,1 +1,1 @@
-npx tsx $1
+tsx $1
