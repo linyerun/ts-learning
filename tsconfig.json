@@ -6,7 +6,8 @@
     "target": "ES6",  // 目前这个版本用不了ES5了
     "rootDir": ".",   // 避免去掉src
     "outDir": "./dist", // 产物的输出地址
-    "module": "commonjs"
+    "module": "commonjs",
+    "experimentalDecorators": true, // 开启实验性装饰器
   },
   // 编译哪个目录的ts文件
   "include": [
