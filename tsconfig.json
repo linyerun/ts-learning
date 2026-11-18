@@ -1,6 +1,6 @@
 {
   "compilerOptions":{
-    "strict": true,  // 是否开启strict模式
+    "strict": false,  // 是否开启strict模式
     "incremental": false,
     "diagnostics": true,
     "target": "ES6",  // 目前这个版本用不了ES5了

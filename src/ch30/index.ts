@@ -3,10 +3,10 @@ import { Dictionaries } from "./enum"
 
 export class Storage implements StorageCls {
     //存储接受 key value 和过期时间 默认永久
-    public set<T = any>(key: Key, value: T, expire: expire = Dictionaries.permanent) {
+    public set<T>(key: Key, value: T, expire: expire = Dictionaries.permanent) {
         //格式化数据
-        const data = {
-            value,
+        const data: Data<T> = {
+            value: value,
             [Dictionaries.expire]: expire
         }
         //存进去
@@ -14,7 +14,7 @@ export class Storage implements StorageCls {
     }
 
     // 读取缓存数据
-    public get<T = any>(key: Key):Result<T> {
+    public get<T>(key: Key):Result<T> {
         const value = localStorage.getItem(key)
         //读出来的数据是否有效
         if (!value) {
